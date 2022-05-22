@@ -1,0 +1,30 @@
+body{
+    color: gray;
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+    background: lime;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transform: transform 100ms;
+    box-shadow: darkgreen;
+}
+
+.choice-prefix{
+    padding 2rem 2.5rem;
+    color: black;
+}
+
+.choice-text{
+    padding: 2rem;
+    width: 100%;
+}
