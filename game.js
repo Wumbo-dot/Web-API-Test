@@ -102,6 +102,25 @@ choices.forEach(choice => {
     }, 1000)
     })    
 })
+function countdown(){
+    var timeLeft = 5;
+
+var timeInterval = setInverval(function(){
+    if(timeLeft>1){
+        timeInterval.textContent = timeLeft + 'seconds remaining';
+        timeLeft--;
+    }
+    else if(timeLeft === 1){
+        timeInterval.textContent = timeLeft + 'second remaining';
+        timeLeft--;
+    }
+    else{
+        timeInterval.textContent = '';
+        clearInterval(timeInterval);
+        displayMessage()
+    }
+}, 1000)    
+}
 
 incrementScore = num =>{
     score +=num;
